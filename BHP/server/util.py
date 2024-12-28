@@ -30,7 +30,7 @@ def load_saved_artifacts():
     print("Loading saved artifacts...start")
 
     # Ensure the file paths are correct
-    with open("./artifacts/columns.json", "r") as f:
+    with open("BHP/server/artifacts/columns.json", "r") as f:
         __data_columns = json.load(f)['data_columns']
         __locations = __data_columns[3:]  # first 3 columns are sqft, bath, bhk
 
